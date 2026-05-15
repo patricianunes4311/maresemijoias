@@ -4,15 +4,14 @@
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Playfair Display', serif;
-    font-weight: 600;
-    letter-spacing: 1px;
-    color: #7d3c6c;
+    font-weight: 700;
+    letter-spacing: 0.5px;
 }
 
 .navbar-brand {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #8B4A7F;
+    color: #ff006a;
 }
 
 .navbar {
@@ -22,37 +21,36 @@ h1, h2, h3, h4, h5, h6 {
     right: 0;
     width: 100%;
     z-index: 1000;
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(10px);
+    
 }
 
 .navbar-rose {
     background-color: transparent !important;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 
 body {
-    background: linear-gradient(135deg, #faf9f7 0%, #fff8fa 100%);
-    line-height: 1.7;
-    letter-spacing: 0.4px;
+    background: linear-gradient(135deg, #faf8f3 0%, #fff5f7 100%);
+    line-height: 1.6;
+    letter-spacing: 0.3px;
     margin: 0;
     padding-top: 140px; /* Espaço para a navbar fixa */
-    color: #5a5a5a;
 }
 
 .card {
-    border: 1px solid rgba(212, 175, 55, 0.15);
-    border-radius: 20px;
-    transition: all 0.6s ease-out;
-    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
-    background: rgba(255, 255, 255, 0.92);
-    overflow: hidden;
+    border: 1px solid rgba(226, 169, 13, 0.18);
+    border-radius: 18px;
+    transition: all 0.4s ease;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.06);
+    background: rgba(255, 255, 255, 0.9);
 }
 
 .card:hover {
-    transform: scale(1.03);
-    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.12);
-    border-color: rgba(212, 175, 55, 0.35);
+    transform: translateY(-8px);
+    box-shadow: 0 18px 38px rgba(0, 0, 0, 0.08);
+    border-color: rgba(226, 169, 13, 0.45);
 }
 
 .logo {
@@ -63,9 +61,9 @@ body {
 }
 
 .navbar-nav .nav-link {
-    color: #555;
+    color: #333;
     font-weight: 500;
-    transition: all 0.5s ease-out;
+    transition: all 0.3s ease;
     position: relative;
 }
 
@@ -76,12 +74,8 @@ body {
     left: 0;
     width: 0;
     height: 2px;
-    background-color: #D4AF37;
-    transition: width 0.5s ease-out;
-}
-
-.navbar-nav .nav-link:hover {
-    color: #8B4A7F;
+    background-color: #e2a90d;
+    transition: width 0.3s ease;
 }
 
 .navbar-nav .nav-link:hover::after {
@@ -89,35 +83,31 @@ body {
 }
 
 .btn-outline-gold {
-    color: #D4AF37;
-    border-color: #D4AF37;
+    color: #c17d08;
+    border-color: #c17d08;
     background: transparent;
-    letter-spacing: 1px;
-    padding: 0.65rem 1.8rem;
-    transition: all 0.5s ease-out;
-    border-width: 1.5px;
+    letter-spacing: 0.8px;
+    padding: 0.65rem 1.5rem;
+    transition: all 0.3s ease;
 }
 
 .btn-outline-gold:hover {
     color: #fff;
-    background-color: #D4AF37;
-    border-color: #D4AF37;
-    transform: scale(1.02);
-    box-shadow: 0 8px 25px rgba(212, 175, 55, 0.25);
+    background-color: #c17d08;
+    border-color: #c17d08;
+    transform: translateY(-1px);
 }
 
 .hero-section {
-    position: relative;
-    overflow: hidden;
-    background: linear-gradient(135deg, #faf6fa 0%, #fff5f9 50%, #fffafa 100%);
-    padding: 100px 0 80px;
+    background: linear-gradient(135deg, #fff2f7 0%, #ffeef5 50%, #fff9fb 100%);
+    padding: 70px 0 60px;
     text-align: center;
-    margin-bottom: 60px;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out, visibility 0.6s ease-out;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 30px rgba(255, 0, 106, 0.1);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
     opacity: 0;
     transform: translateY(30px);
-    animation: fadeUp 1.2s ease-out forwards;
+    animation: fadeUp 1s ease forwards;
     animation-delay: 0.3s;
 }
 
@@ -125,196 +115,88 @@ body {
 .intro-section.hidden {
     opacity: 0;
     visibility: hidden;
-    transform: translateY(-30px);
+    transform: translateY(-24px);
     height: 0;
     padding-top: 0;
     padding-bottom: 0;
     margin-bottom: 0;
-    transition: all 0.6s ease-out;
 }
 
 .intro-section {
-    position: relative;
-    overflow: hidden;
-    padding: 60px 0;
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out, visibility 0.6s ease-out;
+    padding: 30px 0;
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
     opacity: 0;
     transform: translateY(30px);
-    animation: fadeUp 1.2s ease-out forwards;
+    animation: fadeUp 1s ease forwards;
     animation-delay: 0.7s;
-    max-width: 1200px;
-    margin: 0 auto;
 }
-
-.hero-section::before,
-.intro-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -50%;
-    width: 200%;
-    height: 100%;
-    background: linear-gradient(120deg, rgba(255,255,255,0) 0%, rgba(212,175,55,0.3) 50%, rgba(255,255,255,0) 100%);
-    transform: translateX(-100%) skewX(-20deg);
-    opacity: 0;
-    pointer-events: none;
-    animation: shine 5s ease-in-out infinite;
-}
-
 .hero-title {
-    font-size: 3.5rem;
-    color: #7d3c6c;
-    margin-bottom: 20px;
-    letter-spacing: 2px;
-    line-height: 1.1;
-    font-weight: 700;
+    font-size: 3rem;
+    color: #c8286f;
+    margin-bottom: 14px;
+    letter-spacing: 1px;
+    line-height: 1.05;
 }
 
 .hero-subtitle {
-    font-size: 1.2rem;
-    color: #8B7B8B;
+    font-size: 1.15rem;
+    color: #6d6d6d;
     font-weight: 300;
-    letter-spacing: 1px;
+    letter-spacing: 0.8px;
     max-width: 700px;
     margin: 0 auto;
 }
 
 .section-title {
-    font-size: 2.8rem;
-    color: #7d3c6c;
-    margin-bottom: 30px;
-    font-weight: 700;
+    font-size: 2.25rem;
+    color: #c8286f;
+    margin-bottom: 18px;
 }
 
 .section-description {
     font-size: 1.1rem;
-    color: #6d7d7d;
-    max-width: 800px;
+    color: #666;
+    max-width: 600px;
     margin: 0 auto;
-    line-height: 1.9;
-    font-weight: 300;
+    line-height: 1.8;
 }
 
 footer {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.8) 0%, rgba(245, 240, 245, 0.9) 100%);
-    color: #5a5a5a;
-    margin-top: 4rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #333;
+    margin-top: 3rem;
     width: 100vw;
     position: relative;
     left: 50%;
     right: 50%;
     margin-left: -50vw;
     margin-right: -50vw;
-    box-shadow: 0 -8px 35px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 -4px 10px rgba(255, 0, 106, 0.3);
     text-align: center;
-    padding-top: 2rem;
 }
 
 footer h5 {
-    color: #7d3c6c;
-    font-weight: 700;
-    letter-spacing: 1px;
-    margin-bottom: 1rem;
-}
-
-footer p {
-    font-size: 0.95rem;
-    color: #777;
-    line-height: 1.8;
+    color: #000000;
+    font-weight: bold;
 }
 
 footer a {
-    color: #7d3c6c;
+    color: #333;
     text-decoration: none;
-    transition: all 0.4s ease-out;
-    font-weight: 500;
+    transition: color 0.3s;
 }
 
 footer a:hover {
-    color: #D4AF37;
-    text-decoration: underline;
+    color: #e2a90d;
 }
 
 @keyframes fadeUp {
     from {
         opacity: 0;
-        transform: translateY(40px);
+        transform: translateY(30px);
     }
     to {
         opacity: 1;
         transform: translateY(0);
     }
-}
-
-@keyframes shine {
-    0%, 100% {
-        opacity: 0;
-        transform: translateX(-100%) skewX(-20deg);
-    }
-    40%, 60% {
-        opacity: 0.6;
-        transform: translateX(0) skewX(-20deg);
-    }
-}
-
-#productCarousel {
-    border-radius: 24px;
-    overflow: hidden;
-    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15);
-}
-
-.carousel-inner {
-    border-radius: 24px;
-}
-
-.carousel-item img {
-    object-fit: cover;
-    height: 500px;
-    transition: transform 0.8s ease;
-}
-
-.carousel-item:hover img {
-    transform: scale(1.02);
-}
-
-.carousel-caption {
-    border-radius: 16px !important;
-    backdrop-filter: blur(8px);
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    filter: invert(1) brightness(0.9);
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-    width: 50px;
-    height: 50px;
-    background-color: rgba(255, 255, 255, 0.3);
-    border-radius: 50%;
-    top: 50%;
-    transform: translateY(-50%);
-    opacity: 0.7;
-    transition: all 0.4s ease-out;
-}
-
-.carousel-control-prev:hover,
-.carousel-control-next:hover {
-    opacity: 1;
-    background-color: rgba(212, 175, 55, 0.6);
-}
-
-.carousel-indicators button {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.5);
-    transition: all 0.4s ease-out;
-}
-
-.carousel-indicators button.active {
-    background-color: #D4AF37;
-    width: 30px;
-    border-radius: 6px;
 }

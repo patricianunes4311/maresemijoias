@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link href="./CSS/style.css" rel="stylesheet">
     <title>Quem Somos - Mar.é Semi jóias</title>
 </head>
@@ -13,7 +14,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-rose">
         <div class="container-fluid">
-            <img src="./Imagens/logo.png" alt="Logo Mar.é Semi jóias" class="logo me-2">
+            <img src="./Imagens/logosemfundo.png" alt="Logo Mar.é Semi jóias" class="logo me-2">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
                 aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -27,13 +28,17 @@
                         <a class="nav-link active" aria-current="page" href="quemsomos.html">Quem Somos</a>
                     </li>
                 </ul>
+                <form class="d-flex" role="search" onsubmit="return false;">
+                    <input class="form-control me-2" type="search" placeholder="Pesquisar..." aria-label="Search">
+                    <button class="btn btn-outline-gold" type="button">Search</button>
+                </form>
             </div>
         </div>
     </nav>
 
     <div class="container mt-5">
         <h1>Quem Somos</h1>
-        <p class="lead">A Mar.é Semi jóias é uma marca dedicada a oferecer acessórios elegantes e de qualidade para
+        <p class="lead">A Maré Semi jóias é uma marca dedicada a oferecer acessórios elegantes e de qualidade para
             quem busca estilo e personalidade.</p>
 
         <div class="row gy-4">
@@ -41,7 +46,8 @@
                 <div class="card h-100">
                     <div class="card-body">
                         <h2 class="card-title">Nossa Missão</h2>
-                        <p class="card-text">Criar semi jóias que valorizem cada cliente, trazendo confiança e charme para
+                        <p class="card-text">Criar semi jóias que valorizem cada cliente, trazendo confiança e charme
+                            para
                             o dia a dia e ocasiões especiais.</p>
                     </div>
                 </div>
@@ -74,6 +80,35 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+
+    <footer class="footer mt-5">
+        <div class="container-fluid">
+            <div class="row py-4">
+                <div class="col-md-4">
+                    <h5>Mar.é Semi Jóias</h5>
+                    <p>Elegância e estilo em cada peça de nossa coleção exclusiva de semi jóias.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Links Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Página Inicial</a></li>
+                        <li><a href="quemsomos.html">Quem Somos</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contato</h5>
+                    <p>Email: contato@mare.com.br</p>
+                    <p>Telefone: (11) 9999-9999</p>
+                </div>
+            </div>
+            <div class="row border-top pt-3">
+                <div class="col-12 text-center">
+                    <p>&copy; 2025 Maré Semi Jóias. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

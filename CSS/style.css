@@ -202,3 +202,28 @@ footer a:hover {
         transform: translateY(0);
     }
 }
+
+.hero-text {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1s ease;
+}
+
+/* quando ativado */
+.hero-text.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.intro-section {
+  opacity: 0;
+  transform: translateX(-100px) scale(0.98);
+  filter: blur(6px);
+  transition: all 1.2s ease;
+}
+
+.intro-section.show {
+  opacity: 1;
+  transform: translateX(0) scale(1);
+  filter: blur(0);
+}
